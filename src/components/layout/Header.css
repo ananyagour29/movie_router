@@ -1,0 +1,98 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Entire top navbar section */
+.section-navbar {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* 🔲 TOP BLACK BAR */
+.top_txt {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  padding: 12px 24px; /* ⬆ Increased padding for more height */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;     /* ⬆ Increased font size */
+  min-height: 50px;    /* ⬆ Ensures taller black bar */
+}
+
+/* 🔹 LEFT: Sign in/up */
+.sign {
+  display: flex;
+  gap: 20px;
+  margin-left:45px;
+}
+
+.sign a {
+  color: #8ab4f8;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.sign a:hover {
+  color: #ffffff;
+}
+
+/* 🔸 RIGHT: Message text */
+.head_txt {
+  white-space: nowrap;
+  margin-right:45px;
+}
+
+.head_txt p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* 🔳 MAIN NAVBAR CONTAINER */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 🟣 Branding / Logo */
+.navbar-brand p {
+  font-size: 26px;
+  font-weight: 700;
+  color: #6c63ff;
+}
+
+/* 🟠 Navigation menu */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar ul li a {
+  font-size: 16px;
+  color: #1f1f1f;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 5px;
+  transition: all 0.3s ease;
+}
+
+.navbar ul li a.active {
+  color: #6c63ff;
+  border-bottom: 2px solid #6c63ff;
+}

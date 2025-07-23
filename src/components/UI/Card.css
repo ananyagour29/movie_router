@@ -1,0 +1,170 @@
+/* ============================== */
+/* 🎴 CARD (Grid View Component) */
+/* ============================== */
+
+.hero-container {
+  width: 220px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin: 16px;
+}
+
+.hero-container:hover {
+  transform: scale(1.03);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.poster-container {
+  width: 100%;
+  height: 300px;
+  /* background: #000; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.poster {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.ticket-container {
+  padding: 16px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.ticket-btn {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.ticket-btn:hover {
+  background-color: #444;
+}
+
+
+/* ==================================== */
+/* 🎬 MOVIE DETAILS (Single Page View) */
+/* ==================================== */
+
+.heroo {
+  max-width: 650px;
+  margin: 40px auto;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  background: #1a1a1a;
+  transition: transform 0.3s ease;
+}
+
+.heroo:hover {
+  transform: scale(1.02);
+}
+
+.main {
+  display: flex;
+  width: 100%;
+}
+
+.poster {
+  flex: 0 0 220px;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #000; */
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Right Ticket Panel */
+.ticket {
+  flex: 1;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #121212;
+}
+
+.content {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 24px;
+  width: 100%;
+  color: #fff;
+  animation: fadeSlideIn 0.6s ease-out forwards;
+  opacity: 0;
+  transform: translateX(-30px);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.08);
+}
+
+/* ✨ Fade Slide In Animation */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.content p {
+  font-size: 15px;
+  color: #ddd;
+  margin-bottom: 10px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.buy-btn {
+  margin-top: 14px;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 65, 108, 0.3);
+}
+
+.buy-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(255, 75, 43, 0.4);
+}

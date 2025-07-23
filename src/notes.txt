@@ -1,0 +1,21 @@
+1
+✅ useNavigate() with navigate(-1)
+This goes back one step in browser history — just like clicking the back button.
+2
+  <NavLink to="/Home" className="go-back-link">
+  Go Back to home page
+      </NavLink>
+ this is to go to home
+ 3
+ ✅ useLoaderData() — What is it used for?
+useLoaderData() is a React Router hook that lets you get the data returned from a route’s loader function.
+4
+if(navigation.state==="loading") return <Loading/>
+Loading show krne k lie
+5 to hide your data
+Vite ya React app automatically isse read karega jab:
+File ka naam .env ho
+Key VITE_ se start ho
+6
+useParams()
+useParams React Router ka ek hook hai jo URL ke dynamic parameters ko access karne ke liye use hota hai.

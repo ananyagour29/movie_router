@@ -1,0 +1,48 @@
+/* Error page container */
+.error-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  flex-direction:column;
+  gap:10px;
+}
+
+/* Inner content box */
+.error-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Image styling */
+.error-txt img {
+  max-width: 300px;
+  height: auto;
+}
+
+/* Text under image */
+.txt-center h2 {
+  font-size: 23px;
+  color: #444;
+  margin-top: 10px;
+}
+/* Go back button styling */
+.btn {
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color:crimson;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  border:none;
+  display:block;
+}
+
+

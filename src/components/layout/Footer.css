@@ -1,0 +1,101 @@
+/* Footer wrapper */
+.footer {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  padding: 40px 20px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Container for all columns */
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Welcome message full width */
+.footer-container .footer-column:first-child {
+  width: 100%;
+}
+
+/* Group other columns in row */
+.footer-columns-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Each individual column */
+.footer-columns-row .footer-column {
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Headings */
+.footer-column h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+/* Paragraphs and links */
+.footer-column p,
+.footer-column ul li {
+  font-size: 14px;
+  color: #cccccc;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 6px;
+}
+
+.footer-column ul li a {
+  color: #cccccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #ffffff;
+}
+
+/* Newsletter input */
+.newsletter-input {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  background-color: #333333;
+  color: #ffffff;
+  border-bottom: 1px solid #555555;
+}
+
+/* Bottom copyright */
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  margin-top: 30px;
+  font-size: 13px;
+  color: #999;
+}
+/* loading */
+.loader {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color:#444;
+}
